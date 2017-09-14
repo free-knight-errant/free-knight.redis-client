@@ -6,28 +6,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<project.compiler.encoding>utf-8</project.compiler.encoding>
-		<project.compile.version>1.8</project.compile.version>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+		<project.jdk.version>1.7</project.jdk.version>
 	</properties>
 
 	<dependencies>
 	</dependencies>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
-					<configuration>
-						<source>${project.compile.version}</source>
-						<target>${project.compile.version}</target>
-						<encoding>${project.compiler.encoding}</encoding>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${project.jdk.version}</source>
+					<target>${project.jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 	<distributionManagement>

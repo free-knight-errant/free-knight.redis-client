@@ -1,6 +1,7 @@
+
 package org.freeknight.framework.redis;
 
-public class R
+public final class V
 {
-	int id;
+
 }
